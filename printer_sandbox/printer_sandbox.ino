@@ -33,13 +33,14 @@ char* getIceBreakerAtIndex(int i)
  */
 
 void setup() {
-  //Serial1.begin(19200); // Use this instead if using hardware serial
-  //printer.begin();        // Init printer (same regardless of serial type)
-  Serial.begin(9600);
+  Serial1.begin(19200); // Use this instead if using hardware serial
+  printer.begin();        // Init printer (same regardless of serial type)
+  printer.setDefault(); // Restore printer to defaults
 }
 
 void loop() {
-  Serial.println(getRandomIceBreaker());
+  printer.println(getRandomIceBreaker());
+  printer.feed(2);
   delay(5000);
 }
 
