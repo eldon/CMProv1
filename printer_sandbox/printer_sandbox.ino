@@ -7,7 +7,7 @@ Adafruit_Thermal printer(&Serial1);
  * ICE BREAKER STRINGS AND UTILITIES
  */
 
-#define NUM_STRINGS 5
+#define NUM_STRINGS 18
 #define MAX_LENGTH 140
 #define PRINT_DELAY 10000
 
@@ -15,11 +15,24 @@ bool print_message = false;
 int last_print_time;
 
 static const char* string_table[] = {
-    "Hi there, I'm string 0.",
-    "Hi there, I'm string 1.",
-    "Hi there, I'm string 2.",
-    "Hi there, I'm string 3.",
-    "Hi there, I'm string 4.",
+    "If you could invent anything, what would you make?",
+    "If you could have an endless supply of any food, what would you get?",
+    "If you were an animal, what would you be and why?",
+    "What is one goal you’d like to accomplish during your lifetime?",
+    "When you were little, who was your favorite super hero and why?",
+    "What’s your favorite thing to do in the summer?",
+    "If someone made a movie of your life, what would it be about and which actor would you want to play you?",
+    "If you were an ice cream flavor, which one would you be and why?",
+    "What’s your favorite cartoon character, and why?",
+    "If you could visit any place in the world, where would you choose to go and why?",
+    "What’s the ideal dream job for you?",
+    "What are your pet peeves or interesting things about you that you dislike?",
+    "Are you a morning or night person?",
+    "What are your favorite hobbies?",
+    "Name one of your favorite things about someone in your family.",
+    "Tell us about unique or quirky habit or yours.",
+    "Let’s play: Hangman! Your word is: C R I T I C A L"
+    "Let’s play: Hangman! Your word is: M A K I N G"
 };
 
 void setPrintMessage() {
